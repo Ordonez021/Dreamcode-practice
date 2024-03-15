@@ -1,0 +1,39 @@
+img{
+    padding: 2px ;
+    width: 200px;
+    height: 200px;
+}
+button{
+    margin: 20px;
+    
+}
+body{
+    text-align: center;
+
+}
+span{
+    color: brown;
+}
+#game-zone{
+    background: rgb(179, 51, 15);
+    display: flex;
+}
+
+#game-zone figure{
+    flex: 1;
+}
+figcaption{
+    font-size: 30px;
+    color:white;
+}
+p{
+    font-size: 30px;
+    color: black;
+}
+#resultado {
+    background: gold;
+}
+#score{
+
+    background: rgb(0, 255,0,0.5);
+}

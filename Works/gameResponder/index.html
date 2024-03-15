@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body onload="comenzarCuentaRegresiva()">
+
+    <div>
+        <h1>RESPONDE: Las preguntas lo mas rapido podible <span id="cuentaRegresiva"></span></h1>
+        <p>1: El agua de que color es ?</p>
+        <p>* <input type="text" id="respuesta1"></p>
+
+        <p>2: Que moneda se maneja en el pais Ecuador?</p>
+        <p>* <input type="text" id="respuesta2"></p>
+
+        <p>3: Fecha del dia de la independecia</p>
+        <p>* <input type="text" id="respuesta3"></p>
+
+        <p>4: Que color era el caballo de Quijotes ?</p>
+        <p>* <input type="text" id="respuesta4"></p>
+
+        <p>4: Quien quebro el florero de llorente?</p>
+        <p>* <input type="text" id="respuesta5"></p>
+
+        <audio id="audioFinal">
+            <source src="./audio/tono-de-alarma-samsung.mp3" type="audio/mpeg">
+            sonido no habilitado
+        </audio>
+    </div>
+
+    <button onclick="finalizado()"  style="background-color: rgb(86, 225, 86)"> Listo</button>
+    <button onclick="reIntentar()" style="background-color: rgba(211, 87, 73, 0.942)"> Reiniciar</button>
+
+    <script src="./js/dos.js"></script>
+</body>
+</html>

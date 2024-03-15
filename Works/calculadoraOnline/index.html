@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body onload="comenzarReloj()">
+    <p> <span style="font-size: 60px;" id="textoAlarma"></span></p>
+    <div>
+        <div class="cajas">
+            <h1> Calculadora</h1>
+
+            <div class="cajados">
+            <div class="resultados">
+                <input type="number" id="resultado" min="1" max="5"><br><br>
+                <input type="text" id="primerNumero">
+                <input type="text"  id="segundoNumero"> <br><br>    
+            </div>
+        </div>
+            <div class="soluciones">
+                <button onclick="suma()">Suma</button>
+                <button onclick="resta()">Resta</button>
+                <button>Multiplicacion</button> <br>
+                <button>división</button>
+                <button>raíz √</button>
+                <button>potencia</button> <br>
+                <button>Valor abs</button>
+                <button>random</button>
+                <button>round</button><br>
+                <button>floor</button>
+                <button>ceil</button>
+                <button>=</button>
+            </div>
+          
+            
+        </div>  
+        <p>elige</p>
+        <ol> 
+            <li></li>
+            <li></li>
+            <li></li>
+
+           </ol>
+    </div>
+    <script src="./js/eventos.js"></script>
+</body>
+</html>

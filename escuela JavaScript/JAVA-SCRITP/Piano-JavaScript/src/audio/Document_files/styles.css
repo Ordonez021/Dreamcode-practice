@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(182, 116, 30);
+    text-align: center;
+    /* quiero que se centren a la medida de la pantalla */
+    line-height: 100vh;
+    /* para quitar el scroll */
+    margin: 0;
+}
+
+button{
+    /* para centrar al medio pero el elemento padre tiene que tener el elemento line-height 
+    esto sirve con texto con display flex no sirve
+    */
+    vertical-align: middle;
+    width: 100px;
+    height: 400px;
+}

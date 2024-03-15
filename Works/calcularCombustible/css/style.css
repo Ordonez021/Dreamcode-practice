@@ -1,0 +1,23 @@
+*{
+    background: rgb(233, 235, 211);
+}
+
+p{
+  font-size: 20px;  
+}
+
+button{
+    color: rgb(255, 255, 255);
+    font-size: 1pc;
+    height: 30px;
+    background-color: rgb(28, 120, 120);
+}
+strong{
+    background-color: rgb(28, 120, 120);
+
+}
+
+input{
+
+    background-color: white;
+}

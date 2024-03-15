@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- hspace="50" -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAO_021</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="https://cdn.vectorstock.com/i/1000x1000/55/17/chinese-dragon-vector-14065517.webp">
+
+</head> 
+<body onload="comenzarReloj()">
+
+<input type="number" id="datoIngresado" placeholder="inicia la alarma" >
+<button onclick="iniciarConteo()"> Alarma</button>
+<button onclick="mostrarFecha()"> MOSTRARFECHA</button>
+<h1 style="color: red"  id="textoAlarma">00:00:00</h1>
+
+
+<audio id="audioAlarma"> 
+    <source src="tono-de-alarma-samsung.mp3" type="audio/mpeg">
+    sonido deshabilitado
+</audio>
+    <!-- <p>Escribeme tu nombre</p>
+    <input type="text" class="texto" placeholder="Escribe tu nombre" id="nombreIngresado">
+    <button class="boton" onclick="Evento()"><strong> Oprimeme</strong> </button>
+   <h2 id="salida" >No se tu nombre </h2> -->
+
+   <script src="./js/eventos.js"></script>
+</body>
+
+</html>

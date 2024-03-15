@@ -1,0 +1,37 @@
+
+body{
+    text-align: center;
+    width: 40%;
+    margin: 0 auto;
+    background-color: blanchedalmond;
+}
+
+.espera img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    visibility: hidden;
+}
+
+.logito {
+    text-align: center; /* Para centrado horizontal */
+  }
+  
+#imglogo {
+    display: block; /* Convertir la imagen en un bloque para permitir márgenes automáticos */
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    height: 30%;
+}
+
+.contPrincipal{
+    margin: 0 auto;
+    background-color: aqua;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    font-size: 2pc;
+}

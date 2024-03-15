@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //promesa basadose en un archivo json
+    
+        // function obtenerPersonas(){
+        //     return new Promise( function(resolve, reject){
+        //         let xhr = new XMLHttpRequest();
+        //         xhr.open('GET', 'https://jsonplaceholder.typicode.com/users');
+        //         xhr.onload = function(){
+        //             if(xhr.status === 200){
+        //                 resolve(JSON.parse(xhr.responseText));
+        //             }else{
+        //                 reject(xhr.statusText);
+        //             }
+        //         }
+        //         xhr.send();
+        //     })
+        // }
+
+        // obtenerPersonas()
+        //     .then(function(usuarios){
+        //         console.log(usuarios);
+        //     })
+        //     .catch(function(error){
+        //         console.log(error);
+        //     })
+
+
+        // //cuando tenemos dos promesa
+        
+        // let promesa1 = new Promise(function(resolve, reject){
+        //     setTimeout(resolve , 2000, 'Hola');
+        // })
+        // let promesa2 = new Promise(function(resolve, reject){
+        //     setTimeout(resolve , 5000, 'Mundo');
+        // })
+        // Promise.all([promesa1,promesa2]).then(function(valores){
+        //     console.log(valores);
+        // })
+        // console.log("esta linea esta de ultima se ejecuta de primero");
+
+        // //creamos la promesa con la variable
+    
+        // let mipromesa = new Promise(function(resolve , reject){
+        //     setTimeout(function(){
+        //         let error = false;
+        //         if(error){
+        //             reject('error en la promesa')
+        //         }else{
+        //             resolve('la promesa se ha cumplido')
+        //         }
+        //     })
+        // });
+
+        // mipromesa.then(function(resultado){
+        //     console.log(resultado)
+        // })
+        // .catch(function(error){
+        //     console.log(error);
+        // });
+    //////////////////////////////////////
+    function getDatos(url) {
+    return new Promise(function(resolve, reject){
+        let xhr = new XMLHttpRequest();
+        xhr.open('GET', url);
+        xhr.onload = function(){
+            if(xhr.status === 200){
+                resolve(JSON.parse(xhr.responseText));
+                }else{
+                reject(xhr.statusText);
+                }
+        }
+        xhr.send();
+    });
+    }
+
+    function json(dato){
+        return dato;
+    }
+getDatos(json('https://jsonplaceholder.typicode.com/users/'));
+    </script>
+</body>
+</html>

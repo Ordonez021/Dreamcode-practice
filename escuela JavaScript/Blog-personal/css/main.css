@@ -1,0 +1,260 @@
+/*Roboto Slaf 400, 700
+  Roboto 400 500 700 900
+  Roboto Mono 400 500 700
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap');
+
+*{
+  overflow: auto;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.home-body{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+body{
+  font-family: 'roboto-mono', sans-serif;
+  font-size: 400;
+}
+
+/* header */
+
+.header{
+  /* sara en dos filas el contenido */
+  display: grid;
+  width: 100%;
+  height: 150px;
+  /* poner las filas en fragmentos. crea filas por cada 1fr*/
+  grid-template-rows: 1fr 1fr ;
+
+  /* grid-template-columns: 1fr 1fr ; */
+}
+
+.social-media{
+  background-color: green;
+  width: 100%;
+  height: 60px;
+  display: grid;
+}
+.social-icons{
+  width: 250px;
+  height: auto;
+  /* activamos el display flex para tener acceso */
+  display: flex;
+  /* ahora podemos usar lo siguiente*/
+  justify-content: center;
+  justify-self: end;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-right: 50px;
+}
+.social-icons{
+  color: rgb(151, 197, 197);
+  font-size: large;
+}
+
+.social-icons:hover{
+  color: #616161;
+}
+.nav-logo img{
+  padding: 0;
+  margin: 0;
+  width: 300px;
+}
+.nav{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 150px;
+}
+.nav-logo{  
+  display: flex;
+  justify-content: start;
+  margin-left: 50px;
+
+}
+
+.nav-linl{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 80px;
+  align-items: center;
+}
+
+.nav-linl a{
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid black;
+}
+
+.home-main{
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  height: 100%;
+  background-image: url('../img/cover.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.container{
+ 
+  display: grid;
+  /* colocar el contenido a la columba 2 */
+  grid-column: 2;
+  justify-items: center;
+  height: 550px;
+  margin-top: 80px;
+
+
+}
+
+.container__text{
+  text-align: center;
+  font-size: 80px;
+  font-weight: bold;
+  letter-spacing: 10px;
+  color: rgb(255, 255, 255);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+ 
+}
+.container__entra{
+  background-color: rgb(210, 100, 32);
+  /* para poderle agregar padding */
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  height: 45px;
+  border-radius: 7px;
+}
+
+.container__entra:hover{
+  color: rgba(254, 192, 153, 0.64);
+}
+
+
+/* //PAGINA BLOGS */
+
+.blogs-main{
+ 
+  display: grid;
+}
+
+.news{
+  background-color: aliceblue;
+  padding: 10px 80px 20px;
+}
+
+.news-content{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+grid-column: 2fr;
+}
+
+.news-content img{
+  grid-column: 1;
+  width: 85%;
+  display: inline-block;
+  margin: 10px 0;
+}
+
+.news-info{
+  grid-column: 2;
+}
+.news-info h2{
+  margin-top: 30px;
+}
+.news-info p{
+  margin: 50px 0;
+}
+.blogs-btn{
+  text-decoration: none;
+  color: #000;
+  border: 1px solid red;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 15px;
+}
+
+
+/* //posts */
+.posts{
+  padding: 0 80px 40px ;
+}
+
+.posts h3{
+  border-bottom: 1px solid aliceblue;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.posts-blog{
+  display: inline-block;
+  padding: 15px;
+  max-width: 32%;
+  margin-bottom: 50px;
+}
+
+.posts-blog img{
+  width: 100%;
+}
+.posts-blog h3{
+  margin-top: 20px 0;
+}
+.posts-blog p{
+  margin-bottom: 35px;
+}
+
+footer{
+  width: 100%;
+  height: 80px;
+  background-color: rgb(64, 63, 63);
+  border-top: 35px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+
+}
+
+.info-blog{
+  margin-top: 50px;
+  display: grid;
+  justify-items: center;
+}
+
+.postseccion{
+  padding: 0 80px 40px ;
+}
+
+.noticias-posts{
+  max-width: 95%;
+  padding: 10px 150px;
+  padding: flex;
+  margin-bottom: 50px;
+}
+.noticias-posts p{
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.noticias-posts h2{
+  font-size: 40px ;
+  font-family:'Times New Roman', Times, serif;
+}
+
+.parrafo-info{
+  margin-top: 15px;
+  display: flex;
+  justify-items: center;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function avanzarFila(callback){
+            setTimeout(function(){
+                console.log("llego tu turno");
+            callback();
+            }, 5000);
+        }
+
+        function mujerTellama() {
+            console.log("te presentas a tu turno");
+        }
+
+        console.log("llegas a la fila");
+        avanzarFila(mujerTellama);
+        console.log("te vas a comprar cafe");
+
+        
+    </script>
+
+</body>
+</html>

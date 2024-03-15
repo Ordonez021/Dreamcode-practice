@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Registro Automoviles</h1>
+    <button  onclick="mostrarInformacion()">Mostrar Info Automoviles</button>
+    <p></p>
+    <ul id = "listar">
+
+    </ul>
+
+    <script>
+
+        function Automovil(marca,modelo,color,anio,titular) {
+                this.marca = marca;
+                this.modelo = modelo;
+                this.color = color;
+                this.anio = anio;
+                this.titular = titular;
+        }
+
+        let automovil1 = new Automovil("Ford","Focus","blanco",7565,"Mario benedethi");
+        let automovil2 = new Automovil("Camaro","chevrolet","amarillo",2332,"Julio bernet");
+        let automovil3 = new Automovil("mercedes","dahiatsu","azul",890,"Miguel cervantes");
+        let array = [automovil1,automovil2,automovil3]
+
+        Automovil.prototype.venderAutomovil = function(nuevotitular) {
+            this.titular = nuevotitular;
+        }
+        Automovil.prototype.Encender = function() {
+            alert("el automovil fue encendido")
+        }
+        Automovil.prototype.verAuto = function() {
+            return `${this.marca} ${this.modelo} - ${this.anio} - ${this.titular}`
+        }
+
+
+
+        function mostrarInformacion() {
+            let lista = document.getElementById("listar");
+
+            for(let auto of array){
+                let item = document.createElement('li');
+                item.innerText = auto.verAuto();
+
+                lista.appendChild(item);
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- encabezado -->
+    <header class="header">
+        <h1 class="header-title">FIGURAS GEOMETRICAS</h1>
+        <p class="header-description">Calcular diferentes tipos de Áreas Geometricas</p>
+    </header>
+    <!-- Seccion de cajas -->
+    <div class="answer">
+        <p><span id="respuesta"></span> </p>
+    </div>
+    <!-- seccion de cajs -->
+    <section class="content-principal">
+
+        <div class="box">
+            <div class="box-header">
+                <h2>Cuadrado</h2>
+            </div>
+            <div class="box-main">
+                <p class="box-main__text">cuanto mide cada lado del cuadrado</p>
+                <input 
+                class="box-main__inp" 
+                type="number"
+                 name="side" 
+                 id="ladoCuadrado" 
+                 min="0"
+                 placeholder="ingrese el lado"
+                 > <br>
+                 <!--onclick="myModule.cpq()" ESTO LO CAMBIAMOS POR ID PARA LLAMARLO CON ADDEVENTLISTENER-->
+                <button class="box-main__button" id="btnPerimetroSquare">Perímetro</button>
+                <button class="box-main__button" id="btnAreaSquare"">Área</button>
+            </div>
+        </div>
+
+        <!-- triangulo -->
+        <div class="box">
+            <div class="box-header">
+                <h2>Triangulo</h2>
+            </div>
+            <div class="box-main">
+                <p class="box-main__text">cuanto mide cada lado del Triangulo</p>
+                <input class="box-main__inp" type="number" name="side" id="ladoTriangulo1" min="0" placeholder="lado 1"><br>
+                <input class="box-main__inp" type="number" name="side" id="ladoTriangulo2" min="0" placeholder="lado 2"><br>
+                <input class="box-main__inp" type="number" name="side" id="ladoTriangulo3" min="0" placeholder="lado 3"><br>
+                <button class="box-main__button" id="btnPerimetroTriangle">Perímetro</button> <br>
+
+                <input class="box-main__inp" type="number" name="side" id="baseTriangulo1" min="0" placeholder="Ingrese Base"><br>
+                <input class="box-main__inp" type="number" name="side" id="alturaTriangulo2" min="0" placeholder="Ingrese Altura"> <br>
+                <button class="box-main__button" id="btnAreaTriangle">Área</button>
+            </div>
+        </div>
+        <!-- Circulo -->
+        <div class="box">
+            <div class="box-header">
+                <h2>Circulo</h2>
+            </div>
+            <div class="box-main">
+                <p class="box-main__text">cuanto mide cada lado del Circulo</p>
+                <input class="box-main__inp" type="number" name="side" id="radio" min="0" placeholder="Ingrese radio"><br>
+                
+                <button class="box-main__buttonn" id="btnDiametroCircle">Diametro</button>
+                <button class="box-main__buttonn" id="btnPerimetroCircle">Perímetro</button>
+                <button class="box-main__buttonn" id="btnAreaCircle">Área</button>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+<script src="./js/script-main.js"></script>
+</html>

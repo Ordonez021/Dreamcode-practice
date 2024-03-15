@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://img.icons8.com/?size=48&id=20920&format=png" type="image/x-icon">
+    <title>Document</title>
+    <style>
+        .lista-desordenada{
+            list-style: none;
+        }
+        li{
+            text-align: center;
+        }
+        li a:hover{
+            color: red;
+        }
+        li a:active{
+            color: green;
+        }
+        li a{
+            text-decoration: none;
+        }
+
+        li a::after{
+            content: " | ";
+        }
+        .menu-list-li{
+            display: inline-block;
+        }
+        
+
+    </style>
+</head>
+<body>
+
+    <!-- contenedores -->
+    <header>
+        <nav class="menu">
+            <ul class="lista-desordenada">
+                <li class="menu-list-li" ><a href="imagen2.html">imagen hato</a></li>
+                <li class="menu-list-li" ><a href="imagen2.html">imagen perro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        contenido
+    </main>
+
+    <section style="background: blue;">
+        seccion 1 
+        <div style="background: red;">
+            caja
+        </div>
+
+        <p> </p>
+    </section>
+
+    <article>
+        contenedor de articulos
+    </article>
+
+    <footer>
+        pie de pagina
+    </footer>
+</body>
+</html>
+

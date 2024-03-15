@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //async y await nos sirve para hacer algo sincrono mejor que callback
+
+        //asyn la agregamos a la function esto hace que no debe trabar al codigo
+        async function obtenerdatos(){
+            //crear una variable que sera igual await
+            let respuestaGasolina = await fetch('https://api.datos.gob.mx/v1/precio.gasolina.publico')
+            //return fetch('https://api.datos.gob.mx/v1/precio.gasolina.publico')
+            /*
+            *Declaro una variable para pasarle la respuestaGasolina.json() con await 
+            */
+            let datoGasolina = await respuestaGasolina.json();
+
+            let respuestaDolar = await fetch('https://open.er-api.com/v6/latest/USD')
+
+            let datoDolar = await respuestaDolar.json();
+
+            console.log(datoGasolina,datoDolar)
+        }
+        obtenerdatos();
+
+        console.log("el codigo sigue");
+
+        
+        
+    </script>
+
+</body>
+</html>

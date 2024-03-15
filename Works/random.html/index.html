@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       
+    <button onclick="aleatorio(1,20)"> Dame un aleatorio</button>
+    <p>numero aleatorio: <span id="numAleatorio"></span></p>
+
+    <script>
+        let elementoNumero = document.getElementById("numAleatorio");
+        function aleatorio(min,max) {
+            let resultado = Math.floor(Math.random() * (max - min) + min);
+           elementoNumero.textContent = resultado;
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box ; /* borra todos los style */
+}
+
+
+body{
+    font-family: sans-serif;
+    font-size: 18px;
+    background-color: rgb(255, 255, 255);
+}
+
+/* encabezado */
+
+.header{
+    background-color: #243268;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.header-title{
+    color: rgb(255, 255, 255);
+    padding: 20px 0;
+    /* transformar el text */
+    text-transform: uppercase;
+}
+
+.header-description{
+    color: white;
+    padding: 10px 0;
+}
+
+/* respuesta */
+
+.answer{
+    text-align: center;
+    padding: 30px 0;
+}
+.answer p{
+    font-size: 25px;
+    /* negrita (600 en ves de bold) */
+    font-weight: bold;
+}
+
+/* contenedor de las figuras */
+.content-principal{
+    width: 90%;
+    /* el contenedor se centra */
+    margin: auto; 
+    padding: 10px;
+    overflow: hidden;
+    max-width: 1600px;
+}
+
+/* casillas o cajas div */
+.box{
+    /* depende la pantalla que este utilizando */
+    width: 30%;
+    height: auto;
+    border: 3px solid #253062;
+    border-radius: 15px;
+    margin: 15px;
+    /* para no tener conflictos */
+    /* las cajas quedan al lado  */
+    float: left;
+}
+
+/*ENCABEZADO Y MAIN DE LA CAJA*/
+
+.box-header{
+    background-color: #253062;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 15px 0;
+}
+
+.box-main{
+    text-align: center;
+    padding: 20px 0;
+}
+
+.box-main__text{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+.box-main__inp{
+    height: 35px;
+    width: 200px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 10px;
+    padding: 14px;
+    border: solid #253062;
+    border-radius: 7px;
+}
+
+.box-main__button{
+    background-color: #253062;
+    color: aliceblue;
+    margin: 10px;
+    padding: 5px 10px;
+    font-size: 18px;
+    border-radius: 7px;
+
+}
+
+.box-main__button:hover{
+    background-color: rgb(44, 44, 234);
+    cursor: pointer;
+}
+
+.box-main__button:active{
+    background-color: rgb(4, 86, 130);
+}
+
+.box-main__buttonn{
+    background-color: #253062;
+    color: aliceblue;
+    text-align: center;
+    padding: 5px 10px;
+    margin: 13px ;
+    font-size: 18px;
+    border-radius: 7px;
+}
+
+span{
+    color: rgb(172, 92, 13);
+    font-size: 35px;
+    font-weight: bold;
+
+}
+
+/* web responsive */
+
+@media screen and (max-width: 1021px){
+    .box{
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width: 800px){
+    .box{
+        width: 90%;
+        
+        margin: 30px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 600px){
+  .box{
+    width: 90%;
+    margin: 25px;
+    height: auto;
+  }
+
+}
